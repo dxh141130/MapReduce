@@ -31,8 +31,8 @@ public class MutualFriendList {
 				throws IOException, InterruptedException{
 			String[] pair = value.toString().trim().split("\\t");
 			//check whether the user has no friend
-            if(pair.length!=2)
-                return;
+            		if(pair.length!=2)
+               		  return;
 			String userId = pair[0];
 			String[] friendList = pair[1].trim().split(",");
 			for(int i = 0; i < friendList.length;i++){
